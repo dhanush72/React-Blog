@@ -9,10 +9,14 @@ import {
 } from "react-router-dom";
 
 function App() {
+  const user = {
+    firstName: "Dhanush",
+    lastName: "R",
+  };
   return (
     <Router>
       <div>
-        <Navigation />
+        <Navigation firstName={user.firstName} lastName={user.lastName} />
         <Switch>
           <Route path="/:page" component={PageRender} />
           <Route path="/" render={() => <Redirect to="/home" />} />

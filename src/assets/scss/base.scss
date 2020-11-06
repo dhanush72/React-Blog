@@ -1,2 +1,11 @@
 @import "./_variables";
 @import "./navigation";
+
+html body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.231;
+  background: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
